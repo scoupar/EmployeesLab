@@ -24,8 +24,13 @@ public  abstract class Employee {
         return salary;
     }
 
-    public double raiseSalary(double increment){
-       return salary + increment;
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public double raiseSalary(double amount){
+        setSalary(salary + amount);
+        return salary;
 
     }
 
